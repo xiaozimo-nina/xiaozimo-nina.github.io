@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+.pastpaperpage{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(https://i.pinimg.com/originals/8f/22/b2/8f22b2306c8ebb4ac98867ede4073d6e.jpg)
+}
+
+.link{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 90px;
+    cursor: pointer;
+}
+
+.pastpaperpage ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.pastpaperpage ul li a{
+    text-decoration: none;
+    color: rgb(255, 232, 232);
+    text-transform: uppercase;
+}
+
+.pastpaperpage ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #ffaaaa;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.pastpaperpage ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 232, 232);
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    width: 80%;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #ffaaaa;
+    background: transparent;
+    color: rgb(255, 232, 232);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #ff7b7b;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+.line{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0 none;
+    background-color: rgb(255, 232, 232);
+    height: 2px;
+}
+
+a{
+    color: rgb(255, 232, 232);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.pastpapers{
+    color: rgb(255, 232, 232);
+    text-align: center;
+    background-color: #101010;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-0%);
+}
+
+.pastpapers h1{
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.pastpapers p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    width: 80%;
+}
+
+.pastpapers ul li{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.line1{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0 none;
+    background-color: rgb(255, 232, 232);
+    height: 2px;
+}
+
+.table{
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px #ffaaaa;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(255, 232, 232);
+    margin: 15px;
+}
+
+.table__header{
+    padding: 25px;
+    background: #1e1f22;
+    color: rgb(255, 232, 232);
+}
+
+.table__title,
+.table__summary{
+    margin: 0;
+    text-align: center;
+}
+
+.table__title{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.table__summary{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.table__description{
+    padding: 25px;
+}
+
+.table__list{
+    padding: 0;
+    margin: 0;
+}
+
+.table__feature{
+    list-style: none;
+    margin: 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.table__feature:not(:last-child){
+    margin-bottom: 0.5em;
+}
+
+.table__feature::before{
+    content: "\2714";
+    color: #ffaaaa;
+    position: absolute;
+    left: 0;
+}
+
+.container{
+    padding: 0px;
+}
+
+.lines{
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+
+.lines::after,
+.lines::before{
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 1px;
+    background: #ffaaaa;
+    width: 45%;
+    top: 45%;
+}
+
+.lines::after{
+    left: 0;
+}
+
+.lines::before{
+    right: 0;
+}
+
+.circle{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ffaaaa;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px){
+	.circle, .diamond{
+		height: 20px;
+		width: 20px;
+	}
+	.lines{
+		height: 25px;
+	}
+}
+
+.ttable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
